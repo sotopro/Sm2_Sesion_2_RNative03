@@ -1,0 +1,1 @@
+Clase 2 - Semana 2 - Comprendiendo condicionales en Javascript
