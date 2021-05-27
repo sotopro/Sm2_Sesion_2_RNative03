@@ -280,7 +280,21 @@ let nickname = 'Supercoder';
 console.log(firstName ?? lastName ?? nickname ?? 'Anonymous') // Supercoder
 console.log(firstName || lastName || nickname || 'Anonymous') // Supercoder
 
-let height = 0;
+// let height = 0;
 
-console.log(height || 100); // 100
-console.log(height ?? 100); // 0;
+// console.log(height || 100); // 100
+// console.log(height ?? 100); // 0;
+
+let height = null;
+let width = null;
+
+// important : use parentheses
+let area = (height ?? 100) * (width ?? 50);
+
+console.log(area)
+
+// ?? with && or ||
+
+// let importantNumber = 1 && 2 ?? 3; // Syntax Error
+let numbers = (2 && 5) ?? 3 // Works!
+console.log(numbers)
