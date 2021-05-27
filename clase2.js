@@ -91,6 +91,126 @@ console.log(highQuality || lowPrice)
 
 console.log(!highQuality);
 
+const balance = 500;
+const jeans = 50;
+const phone = 600;
 
 
+if(jeans <= balance){
+  // code that will execute if condition true
+  console.log('You have enough money to purchase the item!')
+}
+
+if(phone <= balance){
+  // code that will execute if condition true
+  console.log('You have enough money to purchase the item!')
+} else {
+  console.log('You do not have enough money in your account to purchase this item!')
+}
+
+let grade = 87;
+
+if(grade >= 90) {
+  console.log('A')
+} else if(grade >= 80){
+  console.log('B')
+} else if (grade >= 70){
+  console.log('C')
+} else if (grade >= 60) {
+  console.log('D')
+} else {
+  console.log('F');
+}
+
+// Switch
+
+// switch(expression) {
+//   case x:
+//     // excute case x code block
+//     break;
+//   case y:
+//     // excute case y code block
+//   default:
+//     // excute default y code block
+// }
+
+const day = new Date().getDay();
+
+console.log('day', day)
+
+switch (day) {
+  case 1:
+    console.log('Happy Monday!')
+    break;
+  case 2:
+    console.log("It's Tusday. You got this!")
+    break;
+  case 3:
+    console.log('Hump day already!')
+    break;
+  case 4:
+    console.log("Just one more day 'til the weekend!");
+    break;
+  case 5:
+    console.log('Happy Friday');
+    break;
+  case 6:
+    console.log('Have wonderfull Saturday!')
+    break;
+  case 7:
+    console.log("It's Sunday, time to relax")
+    break;
+  default:
+    console.log('Something went horribly wrong!...')
+}
+
+const lang = 'ES'
+switch (lang) {
+  case 'ES':
+    console.log('Hola, Buen día!')
+    break;
+  case 'EN':
+    console.log("Hi, Good day!")
+    break;
+  default:
+    console.log('Something went horribly wrong!...')
+}
+
+// Ternary Operator if ? else :
+
+// (condition) ? expression on true : expression on false
+
+let age = 20;
+
+// if(age >= 21){
+//   'You may enter' 
+// } else {
+//   'Your may not enter'
+// }
+
+// if(age >= 21) 'You may enter';
+// else 'Your may not enter';
+
+const oldEnough = age >= 21 ? 'You may enter' : 'Your may not enter';
+
+console.log('oldEnough', oldEnough);
+
+const grades = 87;
+
+switch(true){
+  case grade >= 90:
+    console.log('A');
+    break;
+  case grade >= 80:
+    console.log('B');
+    break;
+  case grade >= 70:
+    console.log('C');
+    break;
+  case grade >= 60:
+    console.log('D');
+    break;
+  default:
+    console.log('F');
+}
 
