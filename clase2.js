@@ -214,3 +214,73 @@ switch(true){
     console.log('F');
 }
 
+// multiples cases
+
+const month = new Date().getMonth();
+
+switch(month){
+  // January, February, March
+  case 0:
+  case 1:
+  case 2:
+    console.log("Winter")
+    break;
+  // April, May, June
+  case 3:
+  case 4:
+  case 5:
+    console.log('Spring');
+    break;
+  // July, August, September
+  case 6:
+  case 7:
+  case 8:
+    console.log('Summer');
+    break;
+  // October, November, December
+  case 9:
+  case 10:
+  case 11:
+    console.log('Autumn');
+    break;
+  default:
+    console.log('Something went wrong!')
+}
+
+let authenticated = false;
+
+// let url = authenticated ? (
+//   alert('You will redirect to admin area'),
+//   '/admin'
+// ) : (
+//   alert('Access denied'),
+//   '/403'
+// );
+
+// console.log(url);
+
+// multiple ternary operators
+
+let speed = 60;
+
+let message = speed >= 120 ? 'Too Fast' : (speed >= 80 ? 'Fast' : 'OK');
+
+console.log('message', message)
+
+// result = (a !== null && a !== undefined) ? a : b;
+
+let user = 'Daniel';
+
+console.log(user ?? 'Anoymous');
+
+let firstName = null;
+let lastName = null;
+let nickname = 'Supercoder';
+
+console.log(firstName ?? lastName ?? nickname ?? 'Anonymous') // Supercoder
+console.log(firstName || lastName || nickname || 'Anonymous') // Supercoder
+
+let height = 0;
+
+console.log(height || 100); // 100
+console.log(height ?? 100); // 0;
